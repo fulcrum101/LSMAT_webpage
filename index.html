@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <title>LSMAT</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Times New Roman", serif
+        }
+
+        a.custom-1-hover {
+            background-color: #9D2235 !important;
+            color: white !important;
+        }
+
+        a.custom-1-hover:hover {
+            background-color: white !important;
+            color: #9D2235 !important;
+        }
+
+        a.custom-2-hover {
+            background-color: #9D2235 !important;
+            color: white !important;
+            border-style: solid;
+            border-color: #9D2235 !important;
+            border-width: thick !important;
+        }
+
+        a.custom-2-hover:hover {
+            background-color: white !important;
+            color: #9D2235 !important;
+            border-style: solid;
+            border-color: #9D2235 !important;
+            border-width: thick !important;
+        }
+
+        a.custom-3 {
+            text-decoration: none;
+            border-style: solid;
+            border-width: 0.3em !important;
+            border-color: #9D2235 !important;
+        }
+
+        a.custom-3:hover {
+            background-color: white !important;
+            color: #2E445A !important;
+            border-style: solid;
+            border-color: #2E445A !important;
+            border-width: 0.3em !important;
+        }
+
+        body, html {
+            height: 100%;
+            line-height: 1.8;
+            background-color: #2E445A;
+        }
+
+        /* Full height image header */
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("./images/calc_2.webp");
+            min-height: 100%;
+        }
+
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
+
+        img.mySlides {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-card" id="myNavbar" style="background-color: #2E445A; color: white;">
+        <a class="w3-bar-item w3-button w3-hover-none" href="#header"><img
+                alt="Latvijas Skolēnu Matemātiskās Analīzes Turnīrs"
+                height="35"
+                src="./images/logo_white.png"></a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small w3-hide-medium" style="vertical-align: middle">
+            <a class="w3-bar-item w3-button w3-hover-white" href="#info" style="font-size: 20px">Informācija</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#prepare" style="font-size: 20px">Sagatavošanas</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#sponsors" style="font-size: 20px">Atbalstitāji</a>
+            <a class="w3-bar-item w3-button w3-hover-white" href="#contacts" style="font-size: 20px">Kontakti</a>
+            <a class="w3-bar-item w3-button custom-1-hover" href="https://forms.gle/He5ScuKU2Puthtr86"
+               style="font-size: 20px;}"
+               target="_blank">Reģistrēties</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a class="w3-bar-item w3-button w3-right w3-hide-large" href="javascript:void(0)" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-large"
+     id="mySidebar" style="display:none; background-color: #2E445A; color: white">
+    <a class="w3-bar-item w3-button w3-large w3-padding-16" href="javascript:void(0)" onclick="w3_close()">Aizvērt ×</a>
+    <a class="w3-bar-item w3-button" href="#info" onclick="w3_close()">Informācija</a>
+    <a class="w3-bar-item w3-button" href="#prepare" onclick="w3_close()">Sagatavošanas</a>
+    <a class="w3-bar-item w3-button" href="#sponsors" onclick="w3_close()">Atbalstitāji</a>
+    <a class="w3-bar-item w3-button" href="#contacts" onclick="w3_close()">Kontakti</a>
+    <a class="w3-bar-item w3-button custom-1-hover" href="https://forms.gle/He5ScuKU2Puthtr86" onclick="w3_close()"
+       target="_blank">Reģistrēties</a>
+</nav>
+
+<!-- Header-->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="header">
+    <div class="w3-display-left" style="padding:48px">
+        <span class="w3-xxxlarge w3-hide-small w3-padding-large" style="background-color: #2E445A;color: white">Latvijas Skolēnu Matemātiskās Analīzes Turnīrs</span><br>
+        <span class="w3-xlarge w3-hide-small w3-padding-large" style="background-color: #2E445A;color: white">Veni vidi vici</span><br>
+        <span class="w3-xlarge w3-hide-large w3-hide-medium w3-padding-large"
+              style="background-color: #2E445A;color: white">Latvijas Skolēnu</span><br>
+        <span class="w3-xlarge w3-hide-large w3-hide-medium w3-padding-large"
+              style="background-color: #2E445A;color: white">Matemātiskās Analīzes</span><br>
+        <span class="w3-xlarge w3-hide-large w3-hide-medium w3-padding-large"
+              style="background-color: #2E445A;color: white">Turnīrs</span><br>
+        <span class="w3-large w3-hide-large w3-hide-medium w3-padding-large"
+              style="background-color: #2E445A;color: white">Veni vidi vici</span><br>
+        <p><a class="w3-button w3-white w3-padding-large w3-hide-small w3-xxlarge custom-2-hover"
+              href="https://forms.gle/He5ScuKU2Puthtr86" target="_blank">Reģistrēties</a>
+        </p>
+        <p><a class="w3-button w3-white w3-padding-medium w3-hide-large w3-hide-medium w3-large custom-2-hover"
+              href="https://forms.gle/He5ScuKU2Puthtr86"
+              target="_blank">Reģistrēties</a></p>
+    </div>
+</header>
+
+<!-- Info Section -->
+<div class="w3-containe w3-text-white w3-padding-meidum" id="info">
+    <h3 class="w3-center w3-xxlarge">Informācija</h3>
+    <p class="w3-center w3-xlarge w3-border-bottom">Atlase</p>
+    <p class="w3-center w3-large">Atlase notiks 2 posmos klātienē Rīgas Valsts 1. ģimnāzijā (Raiņa bulvārī 8) <strong>12.12.2023</strong>
+    </p>
+    <div class="w3-center" style="margin-top:64px">
+        <div class="w3-half">
+            <p class="w3-large"><strong>1. posms</strong></p>
+            <ul class="w3-large w3-align-lef">
+                <li>14:45-14:55 Ierašanas</li>
+                <li>15:05-15:25 20 atvasināšanas piemēri 20 minūtēs</li>
+                <li>15:30-15:50 20 integrēšanas piemēri 20 minūtēs</li>
+                <li>15:50-16:10 20 min pauze, darbi tiek laboti</li>
+            </ul>
+            <p class="w3-large" style="background-color: white; color: #2E445A">Tiek pazziņoti rezultāti, telpu pamet
+                tie, kas netika tālāk</p>
+        </div>
+        <div class="w3-half">
+            <p class="w3-large"><strong>2. posms</strong></p>
+            <ul class="w3-large">
+                <li>16:20-17:00 20 integrēšanas piemēri + 5 bonusa uzdevumi 40 minūtēs</li>
+                <li>17:00-17:20 20 min pauze, tiek laboti darbi</li>
+            </ul>
+            <p class="w3-large" style="background-color: white; color: #2E445A">Tiek pazziņoti rezultāti, kuri tika
+                finālā</p>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <p class="w3-center w3-xlarge  w3-border-bottom">Fināls</p>
+    <p class="w3-center w3-large">Fināls ir plānots <strong>21.12.2023</strong>.</p>
+    <p class="w3-center w3-large">Vairāk informācijas tiks paziņots, finālam tuvojoties.</p>
+</div>
+
+<!--- Prepare section --->
+<div class="w3-containe w3-text-white w3-padding-meidum" id="prepare" style="background-color: #9D2235!important">
+    <div class="w3-row-padding">
+        <div class="w3-col m2">
+            <h3 class="w3-xxlarge">Iesakam sagatavoties!</h3>
+            <ul>
+                <li><a class="w3-button custom-3 w3-padding-small w3-large" href="https://www.khanacademy.org/math/calculus-1"
+                       target="_blank">Khan Academy: Calculus 1</a></li>
+                <li><a class="w3-button custom-3 w3-padding-small w3-large" href="https://www.khanacademy.org/math/calculus-2"
+                       target="_blank">Khan Academy: Calculus 2</a></li>
+                <li><a class="w3-button custom-3 w3-padding-small w3-large"
+                       href="https://youtube.com/playlist?list=PL0-GT3co4r2wlh6UHTUeQsrf3mlS2lk6x&si=7lU8Ia-xVyuOwTcr"
+                       target="_blank">3Blue1Brown</a></li>
+            </ul>
+
+        </div>
+        <div class="w3-col m3 w3-padding-large left">
+            <img alt="Derivatives table" class="w3-image w3-round-large" height="394" src="./images/deriv_table.png"
+                 width="700">
+        </div>
+        <div class="w3-col m3 w3-padding-large left">
+            <img alt="Derivatives rules" class="w3-image w3-round-large" height="394" src="./images/deriv_rules.png"
+                 width="700">
+        </div>
+        <div class="w3-col m3 w3-padding-large left">
+        <img alt="Integrals table" class="w3-image w3-round-large" height="394" src="./images/integr_table.png"
+             width="700">
+    </div>
+    </div>
+</div>
+<!--- Sponsors section --->
+<div class="w3-containe w3-text-white w3-padding-meidum" id="sponsors" style="background-color: #2E445A!important">
+    <h3 class="w3-center w3-xxlarge">Mūsu atbalstītāji</h3>
+    <div class="w3-content w3-section w3-white w3-cell-middle w3-card" style="height:300px">
+        <img alt="Latvijas Universitāte" class="mySlides w3-padding-large" src="./images/sponsors/LU.png">
+        <img alt="Rīgas Tehniska Universitāte" class="mySlides w3-padding-large" src="./images/sponsors/rtu.png">
+        <img alt="A. Liepas Neklātienes matemātikas skola" class="mySlides w3-padding-large"
+             src="./images/sponsors/nms.jpg">
+        <img alt="Programme.lv" class="mySlides w3-padding-large" src="./images/sponsors/programme.png">
+    </div>
+</div>
+<!--- Contacts section --->
+<div class="w3-container w3-text-white w3-padding-medium" id="contacts" style="background-color: #9D2235!important">
+    <h3 class="w3-center w3-xxlarge">Kontakti</h3>
+    <div class="w3-half">
+        <div class="w3-large w3-padding-large">
+            <p>Ir jautājumi? Droši sazinies!</p>
+            <p><i class="fa fa-map-marker fa-fw w3-large w3-margin-right"></i> Raiņa Bulvāris 8</p>
+            <p><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> 20601111</p>
+            <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right"> </i> nils.zuravlovs@gmail.com</p>
+        </div>
+    </div>
+    <div class="w3-half">
+        <div class="w3-large w3-padding-large">
+            <p>Komanda</p>
+            <p>- Iļja Niks Stoligvo (projekta vadītājs, uzdevumu autors)</p>
+            <p>- Nils Žuravļevs (galvenais koordinators, uzdevumu autors)</p>
+            <p>- Veronika Lohmanova (tehniskais atbalsts)</p>
+        </div>
+    </div>
+</div>
+
+<script>
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+
+    // Carousel
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
+
+</body>
+</html>
